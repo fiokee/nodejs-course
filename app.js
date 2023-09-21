@@ -4,6 +4,10 @@ const path = require('path');
 
 const app = express();
 
+//creating dynamic template with pug engine
+app.set('view engine', 'pug');
+app.set('views', 'views');
+
 const adminData = require('./router/admin');
 const shopRoute = require('./router/shop');
 
